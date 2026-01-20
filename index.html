@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IDN Cart</title>
 
+  <!-- Tailwind (kalau kamu pakai CDN / build sendiri silakan sesuaikan) -->
   <link rel="stylesheet" href="src/style.css" />
+
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -16,31 +19,43 @@
 </head>
 
 <body>
-  <!-- header -->
+  <!-- HEADER -->
   <header class="py-4 shadow-sm bg-white">
     <div class="container flex items-center justify-between">
-      
-      <!-- logo -->
+
+      <!-- LOGO -->
       <a href="index.html">
         <img src="public/images/logo.svg" alt="IDN Cart Logo" />
       </a>
 
-      <!-- search bar -->
-      <div class="w-full max-w-xl relative">
+      <!-- SEARCH BAR -->
+      <div class="w-full max-w-xl relative flex">
+        <!-- icon -->
         <span class="absolute left-4 top-3 text-lg text-gray-400">
           <i class="fa-solid fa-magnifying-glass"></i>
         </span>
 
+        <!-- input -->
         <input
           type="text"
           placeholder="Search"
-          class="w-full border border-primary pl-12 py-3 pr-4 rounded-md focus:outline-none"
+          class="w-full border border-primary border-r-0
+                 pl-12 py-3 pr-3
+                 rounded-l-md focus:outline-none"
         />
+
+        <!-- button -->
+        <button
+          class="bg-primary border border-primary text-white px-8
+                 rounded-r-md hover:bg-transparent hover:text-primary
+                 transition"
+        >
+          Search
+        </button>
       </div>
 
     </div>
   </header>
-  <!-- header end -->
+  <!-- HEADER END -->
 </body>
 </html>
-  
