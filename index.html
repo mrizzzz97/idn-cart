@@ -1,61 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IDN Cart</title>
 
-  <!-- Tailwind (kalau kamu pakai CDN / build sendiri silakan sesuaikan) -->
-  <link rel="stylesheet" href="src/style.css" />
-
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
-  <!-- HEADER -->
+  <!-- header -->
   <header class="py-4 shadow-sm bg-white">
     <div class="container flex items-center justify-between">
 
-      <!-- LOGO -->
+      <!-- logo -->
       <a href="index.html">
-        <img src="public/images/logo.svg" alt="IDN Cart Logo" />
+        <img src="public/images/logo.svg" alt="IDN Cart Logo">
       </a>
 
-      <!-- SEARCH BAR -->
+      <!-- search bar -->
       <div class="w-full max-w-xl relative flex">
-        <!-- icon -->
         <span class="absolute left-4 top-3 text-lg text-gray-400">
           <i class="fa-solid fa-magnifying-glass"></i>
         </span>
 
-        <!-- input -->
-        <input
-          type="text"
-          placeholder="Search"
-          class="w-full border border-primary border-r-0
-                 pl-12 py-3 pr-3
-                 rounded-l-md focus:outline-none"
-        />
+        <input type="text" placeholder="Search"
+          class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none">
 
-        <!-- button -->
         <button
-          class="bg-primary border border-primary text-white px-8
-                 rounded-r-md hover:bg-transparent hover:text-primary
-                 transition"
-        >
+          class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">
           Search
         </button>
       </div>
 
     </div>
   </header>
-  <!-- HEADER END -->
+  <!-- header end -->
 </body>
 </html>
