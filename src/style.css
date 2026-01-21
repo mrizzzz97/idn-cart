@@ -4,6 +4,10 @@
 /* tailwind */
 @import "tailwindcss";
 
+body{
+  font-family: var(--font-poppins);
+}
+
 @theme{
   /* br */
   ----breakpoint-sm: 576px;
@@ -23,7 +27,7 @@
 @layer utilities {
   .container{
     margin-inline: auto;
-    padding-left: 11rem;
-    padding-right: 11rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }

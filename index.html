@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <!-- header -->
   <header class="py-4 shadow-sm bg-white">
     <div class="container flex items-center justify-between">
@@ -38,31 +39,22 @@
       <!-- icons -->
       <div class="flex items-center space-x-4">
 
-        <!-- wishlist -->
         <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
           <div class="text-2xl">
             <i class="fa-regular fa-heart"></i>
           </div>
           <div class="text-xs leading-3">Wishlist</div>
-          <span
-            class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
-            8
-          </span>
+          <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
         </a>
 
-        <!-- cart -->
         <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
           <div class="text-2xl">
             <i class="fa-solid fa-bag-shopping"></i>
           </div>
           <div class="text-xs leading-3">Cart</div>
-          <span
-            class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">
-            8
-          </span>
+          <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span>
         </a>
 
-        <!-- account -->
         <a href="#" class="text-center text-gray-700 hover:text-primary transition">
           <div class="text-2xl">
             <i class="fa-regular fa-user"></i>
@@ -71,9 +63,74 @@
         </a>
 
       </div>
-
     </div>
   </header>
   <!-- header end -->
+
+  <!-- navbar -->
+  <nav class="bg-gray-800">
+    <div class="container flex">
+
+      <!-- all category -->
+      <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+        <span class="text-white">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <span class="capitalize ml-2 text-white">All Categories</span>
+
+        <!-- dropdown -->
+        <div
+          class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300">
+
+          <a href="#" class="flex px-6 py-3 items-center hover:bg-gray-100 transition">
+            <img src="public/images/icons/bed.svg" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+          </a>
+
+          <a href="#" class="flex px-6 py-3 items-center hover:bg-gray-100 transition">
+            <img src="public/images/icons/sofa.svg" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+          </a>
+
+          <a href="#" class="flex px-6 py-3 items-center hover:bg-gray-100 transition">
+            <img src="public/images/icons/office.svg" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Office</span>
+          </a>
+
+          <a href="#" class="flex px-6 py-3 items-center hover:bg-gray-100 transition">
+            <img src="public/images/icons/terrace.svg" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+          </a>
+
+          <a href="#" class="flex px-6 py-3 items-center hover:bg-gray-100 transition">
+            <img src="public/images/icons/bed-2.svg" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+          </a>
+
+          <a href="#" class="flex px-6 py-3 items-center hover:bg-gray-100 transition">
+            <img src="public/images/icons/restaurant.svg" class="w-5 h-5 object-contain" alt="">
+            <span class="ml-6 text-gray-600 text-sm">Dining</span>
+          </a>
+
+        </div>
+      </div>
+      <!-- all category end -->
+
+      <!-- nav links -->
+      <div class="flex justify-between pl-12 items-center flex-grow">
+        <div class="flex space-x-6">
+          <a class="text-gray-300 hover:text-white transition" href="#">Home</a>
+          <a class="text-gray-300 hover:text-white transition" href="#">Shop</a>
+          <a class="text-gray-300 hover:text-white transition" href="#">About Us</a>
+          <a class="text-gray-300 hover:text-white transition" href="#">Contact Us</a>
+        </div>
+        <a class="text-gray-300 hover:text-white transition" href="#">Login</a>
+      </div>
+      <!-- nav links end -->
+
+    </div>
+  </nav>
+  <!-- navbar end -->
+
 </body>
 </html>
