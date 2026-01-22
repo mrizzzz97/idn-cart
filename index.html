@@ -6,23 +6,22 @@
   <title>IDN Cart</title>
 
   <link rel="stylesheet" href="src/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- header -->
 <header class="py-4 shadow-sm bg-white">
   <div class="container flex items-center justify-between gap-4">
 
-    <!-- logo -->
     <a href="index.html">
       <img src="public/images/logo.svg" alt="IDN Cart Logo" class="h-10">
     </a>
 
-    <!-- search (hidden mobile) -->
     <div class="hidden md:flex w-full max-w-xl relative">
       <span class="absolute left-4 top-3 text-lg text-gray-400">
         <i class="fa-solid fa-magnifying-glass"></i>
@@ -36,7 +35,6 @@
       </button>
     </div>
 
-    <!-- icons -->
     <div class="flex items-center space-x-4">
 
       <a href="#" class="relative text-center text-gray-700 hover:text-primary transition">
@@ -57,18 +55,16 @@
   </div>
 </header>
 
-<!-- ================= NAVBAR ================= -->
+<!-- navbar -->
 <nav class="bg-gray-800">
   <div class="container flex items-center">
 
-    <!-- all category -->
     <div class="relative group bg-primary px-8 py-4 flex items-center cursor-pointer">
       <i class="fa-solid fa-bars text-white"></i>
       <span class="ml-2 text-white capitalize">all categories</span>
 
-      <!-- dropdown -->
       <div
-        class="absolute left-0 top-full w-full bg-white shadow-md py-3 divide-y opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+        class="absolute z-50 left-0 top-full w-full bg-white shadow-md py-3 divide-y opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
 
         <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-100">
           <img src="public/images/icons/bed.svg" class="w-5 h-5">
@@ -87,7 +83,6 @@
       </div>
     </div>
 
-    <!-- links -->
     <div class="hidden md:flex flex-grow justify-between pl-12">
       <div class="flex space-x-6">
         <a href="#" class="text-gray-300 hover:text-white">Home</a>
@@ -101,7 +96,7 @@
   </div>
 </nav>
 
-<!-- ================= BANNER ================= -->
+<!-- banner -->
 <div class="bg-cover bg-no-repeat bg-center py-36"
      style="background-image: url('images/banner-bg.jpg')">
   <div class="container">
@@ -124,11 +119,10 @@
   </div>
 </div>
 
-<!-- ================= SERVICES ================= -->
+<!-- services -->
 <div class="container py-16">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- feature -->
     <div class="border border-primary rounded-sm px-6 py-6 flex items-center gap-5">
       <img src="public/images/icons/delivery-van.svg" class="w-12 h-12">
       <div>
@@ -148,8 +142,10 @@
     <div class="border border-primary rounded-sm px-6 py-6 flex items-center gap-5">
       <img src="public/images/icons/service-hours.svg" class="w-12 h-12">
       <div>
-        <h4 class="font-medium capitalize text-lg">24/7 support</h4>
-        <p class="text-gray-500 text-sm">customer support</p>
+          <h4 class="font-medium capitalize text-lg">
+            24<sup>/7</sup> support
+          </h4>
+          <p class="text-gray-500 text-sm">customer support</p>
       </div>
     </div>
 
@@ -158,4 +154,3 @@
 
 </body>
 </html>
-
