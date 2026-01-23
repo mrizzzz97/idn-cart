@@ -1,188 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDN Cart</title>
-    <link rel="shortcut icon" href="public/images/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="src/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDN-cart</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
-    <!-- font aweesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <!-- header -->
-    <header class="shadow-sm py-4 bg-white">
-      <div class="container flex items-center justify-between">
-        <!-- logo -->
-        <a href="index.html">
-          <img src="public/images/logo.svg" alt="" />
-        </a>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-4 shadow-sm bg-white">
+        <div class="container flex items-center justify-between">
+            <!-- logo -->
+            <a href="#">
+                <img src="images/logo.svg" class="w-32" alt="">
+            </a>
 
-        <!-- search bar -->
-        <div class="w-full flex max-w-xl relative">
-          <span class="absolute left-4 top-3 text-xl text-gray-400">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </span>
-          <input class="border w-full border-primary border-r-0 py-3 pl-12 pr-3 rounded-l-md focus:outline-none" type="text" placeholder="Search" />
-          <button class="bg-primary px-8 text-white rounded-r-md hover:bg-white hover:border hover:border-primary hover:text-primary">Search</button>
+            <!-- search bar -->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="text" class="w-full border border-primary border-r-0 pl-12 py-3 pr-3 rounded-l-md focus:outline-none" placeholder="Search">
+                <button class="bg-primary border border-primary text-white px-8 rounded-r-md hover:bg-transparent hover:text-primary transition">Search</button>
+            </div>
+
+            <!-- icons -->
+            <div class="flex items-center space-x-4">
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-3">Wishlist</div>
+                    <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> 
+                </a>
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text-xs leading-3">Cart</div>
+                    <span class="absolute -right-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-white text-xs">8</span> 
+                </a>
+                <a href="" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-3">Account</div>
+                </a>
+            </div>
+
         </div>
-
-        <!-- icons -->
-        <div class="flex space-x-4">
-          <a href="" class="text-gray-700 text-center hover:text-primary transition relative">
-            <div class="text-2xl">
-              <i class="fa-regular fa-heart"></i>
-            </div>
-            <div class="text-xs leading-3">Wishlist</div>
-            <span class="absolute bg-primary rounded-full text-white flex items-center justify-center w-5 h-5 right-0 -top-1">8</span>
-          </a>
-          <a href="" class="text-gray-700 text-center hover:text-primary transition relative">
-            <div class="text-2xl">
-              <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-            <div class="text-xs leading-3">Cart</div>
-            <span class="absolute bg-primary rounded-full text-white flex items-center justify-center w-5 h-5 -right-2 -top-1">8</span>
-          </a>
-          <a href="" class="text-gray-700 text-center hover:text-primary transition relative">
-            <div class="text-2xl">
-              <i class="fa-regular fa-user"></i>
-            </div>
-            <div class="text-xs leading-3">Account</div>
-          </a>
-        </div>
-      </div>
     </header>
-    <!-- header end -->
+    <!-- Header end -->
 
     <!-- navbar -->
     <nav class="bg-gray-800">
-      <div class="container flex">
-        <!-- all categories -->
-        <div class="bg-primary text-white px-8 py-4 cursor-pointer relative group">
-          <span class="mr-2"><i class="fa-solid fa-bars"></i></span>
-          <span class="capitalize">all categories</span>
-          <!-- dropdown -->
-          <div class="bg-white py-3 absolute w-full top-full left-0 shadow divide-y divide-gray-200 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
-            <!-- single category -->
-            <a href="" class="border-y flex px-6 py-3 hover:bg-gray-100 transition">
-              <img class="w-5 h-5 object-contain" src="public/images/icons/bed.svg" alt="" />
-              <span class="ml-6 text-gray-600 text-sm capitalize">bedroom</span>
-            </a>
-            <!-- single category end -->
-            <!-- single category -->
-            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
-              <img class="w-5 h-5 object-contain" src="public/images/icons/sofa.svg" alt="" />
-              <span class="ml-6 text-gray-600 text-sm capitalize">sofa</span>
-            </a>
-            <!-- single category end -->
-            <!-- single category -->
-            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
-              <img class="w-5 h-5 object-contain" src="public/images/icons/terrace.svg" alt="" />
-              <span class="ml-6 text-gray-600 text-sm capitalize">outdoor</span>
-            </a>
-            <!-- single category end -->
-            <!-- single category -->
-            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
-              <img class="w-5 h-5 object-contain" src="public/images/icons/office.svg" alt="" />
-              <span class="ml-6 text-gray-600 text-sm capitalize">Office</span>
-            </a>
-            <!-- single category end -->
-            <!-- single category -->
-            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
-              <img class="w-5 h-5 object-contain" src="public/images/icons/phone.svg" alt="" />
-              <span class="ml-6 text-gray-600 text-sm capitalize">Smartphone</span>
-            </a>
-            <!-- single category end -->
-            <!-- single category -->
-            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
-              <img class="w-5 h-5 object-contain" src="public/images/icons/restaurant.svg" alt="" />
-              <span class="ml-6 text-gray-600 text-sm capitalize">Dining</span>
-            </a>
-            <!-- single category end -->
-          </div>
+        <div class="container flex">
+            <!-- all category -->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">All Categories</span>
+
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-gray-300 divide-dashed opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+                    <!-- single category -->
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/bed.svg" class="w-5 h-5 object-contain" alt="">
+                        <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/sofa.svg" class="w-5 h-5 object-contain" alt="">
+                        <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/office.svg" class="w-5 h-5 object-contain" alt="">
+                        <span class="ml-6 text-gray-600 text-sm">Office</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/terrace.svg" class="w-5 h-5 object-contain" alt="">
+                        <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+                    </a>
+                    <!-- single category end -->
+                    <!-- single category -->
+                    <a href="" class="flex items-center px-6 py-3 hover:bg-gray-100 transition">
+                        <img src="images/icons/phone.svg" class="w-5 h-5 object-contain" alt="">
+                        <span class="ml-6 text-gray-600 text-sm">Handphone</span>
+                    </a>
+                    <!-- single category end -->
+                </div>
+            </div>
+            <!-- all category end -->
+
+            <!-- navbar links -->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-6 capitalize">
+                    <a href="" class="text-gray-200 hover:text-white transition">Home</a>
+                    <a href="shop.html" class="text-gray-200 hover:text-white transition">Shop</a>
+                    <a href="" class="text-gray-200 hover:text-white transition">About US</a>
+                    <a href="" class="text-gray-200 hover:text-white transition">Contact US</a>
+                </div>
+                <a href="login.html" class="text-gray-200 hover:text-white transition">Login</a>
+            </div>
         </div>
-        <!-- all categories end -->
-        <!-- nav links -->
-        <div class="flex items-center justify-between flex-grow pl-12">
-          <div class="flex space-x-6">
-            <a class="text-gray-300 hover:text-white" href="">Home</a>
-            <a class="text-gray-300 hover:text-white" href="">Shop</a>
-            <a class="text-gray-300 hover:text-white" href="">About Us</a>
-            <a class="text-gray-300 hover:text-white" href="">Contact Us</a>
-          </div>
-          <div class="space-x-6">
-            <a class="text-gray-300 hover:text-white" href="">Login</a>
-            <a class="text-gray-300 hover:text-white" href="">Register</a>
-          </div>
-        </div>
-        <!-- nav links end -->
-      </div>
     </nav>
     <!-- navbar end -->
 
-    <!-- hero -->
-    <div class="bg-cover py-36 bg-no-repeat bg-center" style="background-image: url(&quot;public/images/banner-bg.jpg&quot;)">
-      <div class="container">
-        <h1 class="text-6xl capitalize font-medium text-gray-800 mb-4">
-          best
-          <span class="text-primary">collection</span>
-          for
-          <br />
-          home decoration
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatem quo
-          <br />
-          at facilis sunt rem magnam hic dolorem dignissimos sed?
-        </p>
-        <div class="mt-12">
-          <a class="bg-primary px-8 py-3 text-white rounded-md hover:bg-transparent hover:border hover:border-primary hover:text-primary" href="">Shop Now</a>
+    <!-- banner -->
+    <div class="bg-cover bg-no-repeat bg-center py-36" style="background-image: url('images/banner-bg.jpg');">
+        <div class="container">
+            <h1 class="text-6xl text-gray-800 font-medium mb-4 capitalize">best collection for <br> home decoration</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex odio <br> perferendis commodi dolorem! Eligendi odit nulla eaque qui aliquam odio.</p>
+            <div class="mt-12">
+                <a href="" class="bg-primary border border-primary text-white px-8 py-3 font-medium rounded-md hover:bg-transparent hover:text-primary transition">Shop Now</a>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- hero end -->
+    <!-- banner end -->
 
-    <!-- services -->
+    <!-- features -->
     <div class="container py-16">
-      <div class="grid grid-cols-3 gap-6 mx-auto w-10/12">
-        <!-- single service -->
-        <div class="border border-primary px-3 py-6 rounded-md flex justify-center items-center gap-6">
-          <img class="w-12 h-12 object-contain" src="public/images/icons/delivery-van.svg" alt="">
-          <div>
-            <h4 class="font-medium capitalize text-lg">free shipping</h4>
-            <p class="text-gray-500 text-sm">order over Rp 150.000</p>
-          </div>
+        <div class="w-10/12 grid grid-cols-3 gap-6 mx-auto justify-center">
+            <!-- single feature -->
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="images/icons/delivery-van.svg" class="w-12 h-12 object-contain" alt="">
+                <div>
+                    <h4 class="font-medium capitalize text-lg">free shipping</h4>
+                    <p class="text-gray-500 text-sm">order over $200</p>
+                </div>
+            </div>
+            <!-- single feature end -->
+            <!-- single feature -->
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="images/icons/money-back.svg" class="w-12 h-12 object-contain" alt="">
+                <div>
+                    <h4 class="font-medium capitalize text-lg">money returns</h4>
+                    <p class="text-gray-500 text-sm">30 days money return</p>
+                </div>
+            </div>
+            <!-- single feature end -->
+            <!-- single feature -->
+            <div class="border border-primary rounded-sm px-3 py-6 flex justify-center items-center gap-5">
+                <img src="images/icons/service-hours.svg" class="w-12 h-12 object-contain" alt="">
+                <div>
+                    <h4 class="font-medium capitalize text-lg">24/7 supports</h4>
+                    <p class="text-gray-500 text-sm">customer support</p>
+                </div>
+            </div>
+            <!-- single feature end -->
         </div>
-        <!-- single service end -->
-        <!-- single service -->
-        <div class="border border-primary px-3 py-6 rounded-md flex justify-center items-center gap-6">
-          <img class="w-12 h-12 object-contain" src="public/images/icons/money-back.svg" alt="">
-          <div>
-            <h4 class="font-medium capitalize text-lg">cashback</h4>
-            <p class="text-gray-500 text-sm">30 days money return</p>
-          </div>
-        </div>
-        <!-- single service end -->
-        <!-- single service -->
-        <div class="border border-primary px-3 py-6 rounded-md flex justify-center items-center gap-6">
-          <img class="w-12 h-12 object-contain" src="public/images/icons/service-hours.svg" alt="">
-          <div>
-            <h4 class="font-medium capitalize text-lg"><sup>24</sup>/<sub>7</sub> support</h4>
-            <p class="text-gray-500 text-sm">customer service</p>
-          </div>
-        </div>
-        <!-- single service end -->
-
-      </div>
     </div>
-    <!-- services end -->
+    <!-- features end -->
+
 
     <!-- categories -->
     <div class="container py-16">
@@ -229,10 +206,12 @@
     <!-- categories end -->
 
     <!-- ad section -->
-    <div class="container pb-26 mb-20">
-      <img class="w-full" src="public/images/offer.jpg" alt="">
+    <div class="container mb-20 pb-26">
+        <a href="">
+            <img class="w-full" src="images/offer.jpg" alt="">
+        </a>
     </div>
-    <!-- ad section end -->
+    <!-- ad section -->
 
     <!-- products -->
     <div class="container pb-16">
@@ -424,6 +403,88 @@
       </div>
     </div>
     <!-- products end -->
+     
+    <!-- footer -->
+    <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+        <div class="container grid grid-cols-3">
+            <!-- footer text -->
+            <div class="col-span-1 space-y-8">
+                <img class="w-30" src="images/logo.svg" alt="">
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nihil.</p>
+                <div class="flex space-x-6">
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-linkedin"></i>   
+                    </a>
+                </div>
+            </div>
+            <!-- footer text end -->
 
-  </body>
+            <!-- footer links -->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer links end -->
+
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- copyright -->
+    <div class="bg-gray-800 py-4">
+        <div class="container flex items-center justify-between">
+            <p class="text-white">&copy; IDNCART - All Rights Reversed</p>
+            <img class="h-5" src="images/methods.png" alt="">
+        </div>
+    </div>
+    <!-- copyright end -->
+
+</body>
 </html>
