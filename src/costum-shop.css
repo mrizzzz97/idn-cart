@@ -1,0 +1,496 @@
+/* ===========================
+   RESPONSIVE ONLY - SHOP PAGE (NEW VERSION)
+   Hanya Media Queries untuk Responsive
+   Tidak mengubah styling yang sudah ada
+   =========================== */
+
+/* Tablet Landscape (max-width: 1024px) */
+@media (max-width: 1024px) {
+    /* Container adjustments */
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    /* Header */
+    header .container {
+        flex-wrap: wrap;
+    }
+
+    header .w-full.max-w-xl {
+        max-width: 100%;
+        order: 3;
+        margin-top: 1rem;
+        flex-basis: 100%;
+    }
+
+    /* Navbar */
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav .bg-primary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav .grow {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    nav .justify-between {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav .space-x-6 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Shop Grid Layout - 4 cols to 1 col */
+    .grid-cols-4 {
+        grid-template-columns: 1fr !important;
+    }
+
+    .col-span-1 {
+        grid-column: span 1 !important;
+    }
+
+    .col-span-3 {
+        grid-column: span 1 !important;
+    }
+
+    /* Sidebar moves to bottom */
+    .grid-cols-4.items-start > .col-span-1 {
+        order: 2;
+        margin-top: 2rem;
+    }
+
+    .grid-cols-4.items-start > .col-span-3 {
+        order: 1;
+    }
+
+    /* Product Grid inside - 3 cols to 2 cols */
+    .col-span-3 .grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* Footer */
+    footer .grid-cols-3 {
+        grid-template-columns: 1fr !important;
+    }
+
+    footer .col-span-2 {
+        grid-column: span 1 !important;
+    }
+
+    footer .grid-cols-2 {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Tablet Portrait (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Container */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Header */
+    header {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    header img {
+        max-width: 6rem;
+    }
+
+    header .text-2xl {
+        font-size: 1.5rem !important;
+    }
+
+    header .text-xs {
+        display: none;
+    }
+
+    header .w-5,
+    header .h-5 {
+        width: 1rem !important;
+        height: 1rem !important;
+        font-size: 0.625rem;
+    }
+
+    header .-right-2 {
+        right: -0.5rem !important;
+    }
+
+    /* Search bar */
+    header input[type="text"] {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 2.5rem;
+        font-size: 0.875rem;
+    }
+
+    header button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-size: 0.875rem;
+    }
+
+    header .left-4 {
+        left: 0.75rem !important;
+        top: 0.5rem !important;
+        font-size: 0.875rem;
+    }
+
+    /* Navbar */
+    nav .px-8 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+    }
+
+    nav .space-x-6 {
+        gap: 0.75rem;
+    }
+
+    /* Breadcrumb */
+    .py-4 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+    }
+
+    .gap-3 {
+        gap: 0.5rem !important;
+    }
+
+    /* Sidebar */
+    .px-4 {
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+
+    .pb-6 {
+        padding-bottom: 1rem !important;
+    }
+
+    .py-5 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .text-xl {
+        font-size: 1.125rem !important;
+    }
+
+    /* Sorting */
+    .w-44 {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    .flex.items-center.mb-4 {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
+    .ml-auto {
+        margin-left: 0 !important;
+        margin-top: 0.5rem;
+        justify-content: center;
+    }
+
+    /* Product Grid */
+    .col-span-3 .grid-cols-3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .gap-6 {
+        gap: 1rem !important;
+    }
+
+    /* Product Cards */
+    .pt-4 {
+        padding-top: 0.75rem !important;
+    }
+
+    .pb-3 {
+        padding-bottom: 0.5rem !important;
+    }
+
+    /* Footer */
+    footer {
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    footer .gap-8 {
+        gap: 1.5rem !important;
+    }
+
+    footer .space-y-6 > * + * {
+        margin-top: 1rem;
+    }
+
+    /* Copyright */
+    .bg-gray-800 .container {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Header */
+    header img {
+        max-width: 5rem;
+    }
+
+    header .text-2xl {
+        font-size: 1.25rem !important;
+    }
+
+    header .space-x-4 {
+        gap: 0.375rem;
+    }
+
+    /* Navbar */
+    nav a {
+        font-size: 0.75rem;
+    }
+
+    nav .space-x-6 {
+        gap: 0.5rem;
+    }
+
+    /* Breadcrumb */
+    .text-base {
+        font-size: 0.875rem;
+    }
+
+    /* Sidebar */
+    .text-xl {
+        font-size: 1rem !important;
+    }
+
+    .text-sm {
+        font-size: 0.75rem !important;
+    }
+
+    .space-y-2 > * + * {
+        margin-top: 0.375rem;
+    }
+
+    /* Size & Color filters */
+    .w-6,
+    .h-6 {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+
+    .w-5,
+    .h-5 {
+        width: 1.25rem !important;
+        height: 1.25rem !important;
+    }
+
+    .gap-2 {
+        gap: 0.375rem !important;
+    }
+
+    .gap-4 {
+        gap: 0.75rem !important;
+    }
+
+    /* Sorting */
+    select {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .w-10 {
+        width: 2rem !important;
+    }
+
+    .h-10 {
+        height: 2rem !important;
+    }
+
+    /* Product Grid - 2 cols to 1 col */
+    .col-span-3 .grid-cols-3 {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Product Cards */
+    .uppercase.font-medium.text-xl {
+        font-size: 0.875rem !important;
+    }
+
+    .text-xl.text-primary {
+        font-size: 1rem !important;
+    }
+
+    .text-sm.text-gray-400 {
+        font-size: 0.75rem !important;
+    }
+
+    .w-9 {
+        width: 2rem !important;
+    }
+
+    .h-9 {
+        height: 1.75rem !important;
+    }
+
+    .gap-3 {
+        gap: 0.5rem !important;
+    }
+
+    /* Footer */
+    footer .w-30 {
+        max-width: 6rem;
+    }
+
+    footer .text-sm {
+        font-size: 0.75rem;
+    }
+
+    footer .text-base {
+        font-size: 0.875rem;
+    }
+
+    footer .space-x-6 {
+        gap: 1rem;
+    }
+
+    /* Copyright */
+    .bg-gray-800 p {
+        font-size: 0.75rem;
+    }
+
+    .bg-gray-800 img {
+        height: 1rem !important;
+    }
+}
+
+/* Extra Small Mobile (max-width: 360px) */
+@media (max-width: 360px) {
+    .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    header img {
+        max-width: 4.5rem;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+    }
+
+    nav .space-x-6 {
+        gap: 0.375rem;
+    }
+
+    /* Sidebar filters */
+    .px-4 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .text-xl {
+        font-size: 0.875rem !important;
+    }
+
+    /* Product cards */
+    .px-4 {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+}
+
+/* Mobile Landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+    .pt-16,
+    .pb-16 {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+
+    header {
+        padding: 0.5rem 0;
+    }
+
+    nav .px-8 {
+        padding: 0.5rem 1rem;
+    }
+
+    footer {
+        padding-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+/* Touch Device Optimization */
+@media (hover: none) and (pointer: coarse) {
+    .group:hover .opacity-0 {
+        opacity: 0 !important;
+    }
+
+    .group:active .opacity-0 {
+        opacity: 1 !important;
+    }
+
+    .group:active .group-hover\:opacity-100 {
+        opacity: 1 !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header,
+    nav,
+    footer,
+    .bg-gray-800,
+    .breadcrumb {
+        display: none !important;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .col-span-3 {
+        grid-column: span 4 !important;
+    }
+
+    .shadow,
+    .shadow-sm,
+    .shadow-md {
+        box-shadow: none !important;
+    }
+}
+
+/* Accessibility - Reduce Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
