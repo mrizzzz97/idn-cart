@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+        <title>CHECKOUT | IDN CART</title>
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/style.css" rel="stylesheet" />
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-thin.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-solid.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-regular.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-light.css" />
+
+    <title>IDN Cart</title>
+  </head>
+  <body class="font-poppins">
+    <!-- header -->
+    <header class="shadow-sm py-4 bg-white">
+      <div class="container flex items-center justify-between">
+        <!-- logo -->
+        <a href="index.html">
+          <img src="public/images/logo.svg" alt="" />
+        </a>
+
+        <!-- search bar -->
+        <div class="w-full flex max-w-xl relative">
+          <span class="absolute left-4 top-3 text-xl text-gray-400">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input class="border w-full border-primary border-r-0 py-3 pl-12 pr-3 rounded-l-md focus:outline-none" type="text" placeholder="Search" />
+          <button class="bg-primary px-8 text-white rounded-r-md hover:bg-white hover:border hover:border-primary hover:text-primary">Search</button>
+        </div>
+
+        <!-- icons -->
+        <div class="flex space-x-4">
+          <a href="" class="text-gray-700 text-center hover:text-primary transition relative">
+            <div class="text-2xl">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Wishlist</div>
+            <span class="absolute bg-primary rounded-full text-white flex items-center justify-center w-5 h-5 right-0 -top-1">8</span>
+          </a>
+          <a href="" class="text-gray-700 text-center hover:text-primary transition relative">
+            <div class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-xs leading-3">Cart</div>
+            <span class="absolute bg-primary rounded-full text-white flex items-center justify-center w-5 h-5 -right-2 -top-1">8</span>
+          </a>
+          <a href="account.html" class="text-gray-700 text-center hover:text-primary transition relative">
+            <div class="text-2xl">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- All Categories -->
+        <div
+          class="bg-primary px-8 py-4 flex items-center cursor-pointer relative group"
+        >
+          <span class="text-white mr-1">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="text-white ml-2 capitalize">All Categories</span>
+          <!-- Dropdown -->
+          <div
+            class="bg-white shadow absolute w-full top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out z-50"
+          >
+            <!-- Single Category -->
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-100 hover:text-primary transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/sofa.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Sofa</span>
+            </a>
+            <hr class="opacity-10" />
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-100 hover:text-primary transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/bed.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-100 hover:text-primary transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/phone.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Smartphone</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-100 hover:text-primary transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/office.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Office</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-100 hover:text-primary transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/outdoor-cafe.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-100 hover:text-primary transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/restaurant.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Dining</span>
+            </a>
+            <hr class="opacity-10" />
+
+            <a
+              href=""
+              class="flex px-6 py-3 items-center hover:bg-gray-100 hover:text-primary transition"
+            >
+              <img
+                class="w-5 h-5 object-contain"
+                src="public/images/icons/bed-2.svg"
+                alt=""
+              />
+              <span class="ml-6 text-gray-600 text-sm">Mattress</span>
+            </a>
+            <!-- Single Category End -->
+          </div>
+          <!-- Dropdown End -->
+        </div>
+        <!-- All Categories End -->
+
+        <!-- Nav Links -->
+        <div class="flex justify-between items-center pl-12 grow">
+          <div class="flex space-x-6">
+            <a href="index.html" class="text-gray-300 hover:text-white">Home</a>
+            <a href="shop.html" class="text-gray-300 hover:text-white">Shop</a>
+            <a href="" class="text-gray-300 hover:text-white">About Us</a>
+            <a href="" class="text-gray-300 hover:text-white">Contact Us</a>
+          </div>
+          <div class="flex space-x-6">
+            <a href="" class="text-gray-300 hover:text-white">Login</a>
+            <a href="" class="text-gray-300 hover:text-white">Register</a>
+          </div>
+        </div>
+        <!-- Nav Links End -->
+      </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- breadcumb-->
+    <div class="container flex py-4 items-center gap-3">
+      <a class="text-primary text-base" href="index.html">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <span class="text-gray-400 text-sm">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>
+      <a class="text-primary text-base" href="shop.html">
+        Shop
+      </a>
+      <span class="text-gray-400 text-sm">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>
+      <span class="text-gray-600 font-medium capitalize">Checkout</span>
+    </div>
+    <!-- breadcumb End -->
+     
+
+    <!-- checkout wrapper -->
+    <div class="container grid grid-cols-12 items-start pb-16 pt-4 gap-6">
+
+        <!-- checkout form -->
+        <div class="col-span-8 bg-white p-6 rounded shadow-sm">
+            <h3 class="text-xl font-medium capitalize mb-6">Checkout</h3>
+
+            <!-- First & Last Name -->
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="text-gray-600 mb-2 block">
+                        First name <span class="text-primary">*</span>
+                    </label>
+                    <input type="text" class="input-box w-full" placeholder="John">
+                </div>
+
+                <div>
+                    <label class="text-gray-600 mb-2 block">
+                        Last name <span class="text-primary">*</span>
+                    </label>
+                    <input type="text" class="input-box w-full" placeholder="Doe">
+                </div>
+            </div>
+
+            <!-- Company -->
+            <div class="mb-4">
+                <label class="text-gray-600 mb-2 block">Company name</label>
+                <input type="text" class="input-box w-full" placeholder="Company name">
+            </div>
+
+            <!-- Country -->
+            <div class="mb-4">
+                <label class="text-gray-600 mb-2 block">
+                    Country / Region <span class="text-primary">*</span>
+                </label>
+                <input type="text" class="input-box w-full" placeholder="Indonesia">
+            </div>
+
+            <!-- Address -->
+            <div class="mb-4">
+                <label class="text-gray-600 mb-2 block">
+                    Street address <span class="text-primary">*</span>
+                </label>
+                <input type="text" class="input-box w-full" placeholder="Street name and house number">
+            </div>
+
+            <!-- City -->
+            <div class="mb-4">
+                <label class="text-gray-600 mb-2 block">
+                    Town / City <span class="text-primary">*</span>
+                </label>
+                <input type="text" class="input-box w-full" placeholder="Jakarta">
+            </div>
+
+            <!-- ZIP -->
+            <div class="mb-4">
+                <label class="text-gray-600 mb-2 block">
+                    ZIP Code <span class="text-primary">*</span>
+                </label>
+                <input type="text" inputmode="numeric" pattern="[0-9]*"
+                    class="input-box w-full" placeholder="12345">
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-4">
+                <label class="text-gray-600 mb-2 block">
+                    Phone number <span class="text-primary">*</span>
+                </label>
+                <input type="tel" class="input-box w-full" placeholder="+62 81234567890">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label class="text-gray-600 mb-2 block">
+                    Email address <span class="text-primary">*</span>
+                </label>
+                <input type="email" class="input-box w-full" placeholder="example@email.com">
+            </div>
+
+        </div>
+        <!-- checkout form end -->
+        
+        <!-- checkout card -->
+        <div class="col-span-4 bg-white border border-gray-200 rounded shadow-sm p-5">
+
+            <h4 class="text-gray-800 text-lg font-semibold uppercase mb-4">
+                Order Summary
+            </h4>
+
+            <div class="space-y-4">
+
+                <!-- item 1 -->
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">
+                            Italian Shape Sofa
+                        </h5>
+                        <p class="text-sm text-gray-500">Size: M</p>
+                        <div class="flex items-center gap-2">
+                            <p class="text-sm text-gray-500">Color:</p>
+                            <span class="w-3 h-3 rounded-full bg-pink-400 block"></span>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <p class="text-gray-600">x3</p>
+                        <p class="text-gray-800 font-medium">Rp 150.000</p>
+                    </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h5 class="text-gray-800 font-medium">
+                            King Bed Mattress
+                        </h5>
+                        <p class="text-sm text-gray-500">Size: XL</p>
+                        <div class="flex items-center gap-2">
+                            <p class="text-sm text-gray-500">Color:</p>
+                            <span class="w-3 h-3 rounded-full bg-gray-700 block"></span>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <p class="text-gray-600">x1</p>
+                        <p class="text-gray-800 font-medium">Rp 250.000</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- subtotal -->
+            <div class="border-t border-gray-200 mt-5 pt-4 space-y-3 text-sm">
+
+                <div class="flex justify-between text-gray-600">
+                    <p>Sub Total</p>
+                    <p>Rp 500.000</p>
+                </div>
+
+                <div class="flex justify-between text-gray-600">
+                    <p>Shipping</p>
+                    <p>Free</p>
+                </div>
+
+                <div class="flex justify-between text-gray-800 font-semibold text-base pt-2 border-t">
+                    <p>Total</p>
+                    <p>Rp 500.000</p>
+                </div>
+
+            </div>
+
+            <!-- agreement -->
+            <div class="flex items-start gap-2 mt-4">
+                <input type="checkbox" class="mt-1 accent-red-500">
+                <p class="text-sm text-gray-600">
+                    Agree to our 
+                    <span class="text-red-500">terms & conditions</span>
+                </p>
+            </div>
+
+            <!-- button -->
+            <button class="w-full mt-4 bg-red-500 hover:bg-red-600 text-white py-3 rounded font-medium uppercase transition">
+                Place Order
+            </button>
+
+        </div>
+        <!-- checkout card end -->
+
+    </div>
+    <!-- checkout wrapper end -->
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
+        <div class="container grid grid-cols-3">
+            <!-- footer text -->
+            <div class="col-span-1 space-y-8">
+                <img class="w-30" src="images/logo.svg" alt="">
+                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nihil.</p>
+                <div class="flex space-x-6">
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="" class="text-gray-400 hover:text-gray-500">
+                        <i class="fa-brands fa-linkedin"></i>   
+                    </a>
+                </div>
+            </div>
+            <!-- footer text end -->
+
+            <!-- footer links -->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Marketing</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Analytics</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Commerce</a>
+                            <a href="" class="text-base text-gray-500 hover:text-gray-900 block">Insights</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer links end -->
+
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Copyright -->
+     <div class="bg-gray-800 py-4">
+      <div class="container flex items-center justify-between">
+        <p class="text-white">&copy; IDNCART - All Rights Reserved</p>
+        <img class="h-5" src="public/images/methods.png" alt="">
+      </div>
+     </div>
+    <!-- Copyright end -->
+  </body>
+</html>
