@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-        <title>MY ACCOUNT | IDN CART</title>
+        <title>MY WISHLIST | IDN CART</title>
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/style.css" rel="stylesheet" />
@@ -127,7 +127,6 @@
     </nav>
     <!-- navbar end -->
 
-
     <!-- breadcumb-->
     <div class="container flex py-4 gap-2 items-center">
       <a class="text-primary text-base -z-1" href="index.html">
@@ -160,7 +159,7 @@
              divide-y divide-gray-200">
              <!-- Single Link -->
               <div class="pb-3 pl-8 space-y-1">
-                <a href="" class="relative text-primary block font-semibold capitalize transition transform hover:scale-105">
+                <a href="account.html" class="relative text-gray-800 block font-semibold capitalize transition transform hover:scale-105">
                     <span class="absolute -left-8 top-0 text-base">
                         <i class="fa-solid fa-address-card"></i>
                     </span>
@@ -211,7 +210,7 @@
              <!-- Single Link End -->
              <!-- Single Link -->
               <div class="py-3 pl-8 space-y-1">
-                <a href="wishlist.html" class="relative text-gray-800 hover:text-primary block font-semibold capitalize transition transform hover:scale-105">
+                <a href="" class="relative text-primary hover:text-primary block font-semibold capitalize transition transform hover:scale-105">
                     <span class="absolute -left-8 top-0 text-base">
                         <i class="fa-regular fa-heart"></i>
                     </span>
@@ -233,70 +232,77 @@
             <!-- Sidebar Links End -->
          </div>
         <!-- Sidebar End -->
-        <!-- Profile -->
-        <div class="col-span-9 shadow rounded px-6 pt-5 pb-7">
-            <h4 class="text-xl font-medium capitalize mb-4">PROFILE INFORMATION</h4>
+        <!-- Wishlist -->
+        <div class="col-span-9">
+            <h4 class="text-xl font-medium capitalize mb-4">My Wishlist</h4>
 
-            <div class="grid grid-cols-2 gap-4">
-                <!-- First Name -->
-                <div>
-                    <label class="text-gray-600 mb-2 block">First Name</label>
-                    <input type="text"
-                        class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-primary"
-                        placeholder="Enter first name" value="Muhammad">
+            <div class="space-y-4">
+                <!-- Wishlist Item -->
+                <div class="flex items-center justify-between bg-white shadow rounded p-4">
+                    <div class="flex items-center gap-4">
+                        <img src="public/images/products/product1.jpg" alt="cool sofa" class="w-24 h-20 object-cover rounded">
+                        <div>
+                            <h5 class="text-lg font-semibold uppercase">cool sofa</h5>
+                            <p class="text-sm text-gray-500">Availability: <span class="text-green-500">In Stock</span></p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <p class="text-lg text-red-500 font-semibold">Rp 150.000</p>
+                        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-transparent hover:text-primary border border-primary transition">ADD TO CART</button>
+                        <button class="text-gray-400 hover:text-red-500" aria-label="Remove"><i class="fa-solid fa-trash"></i></button>
+                    </div>
                 </div>
 
-                <!-- Last Name -->
-                <div>
-                    <label class="text-gray-600 mb-2 block">Last Name</label>
-                    <input type="text"
-                        class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-primary"
-                        placeholder="Enter last name"  value="Rizki Suryapratama">
+                <!-- Wishlist Item -->
+                <div class="flex items-center justify-between bg-white shadow rounded p-4">
+                    <div class="flex items-center gap-4">
+                        <img src="public/images/products/product3.jpg" alt="spring bed" class="w-24 h-20 object-cover rounded">
+                        <div>
+                            <h5 class="text-lg font-semibold uppercase">spring bed</h5>
+                            <p class="text-sm text-gray-500">Availability: <span class="text-red-500">Out of Stock</span></p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <p class="text-lg text-red-500 font-semibold">Rp 346.000</p>
+                        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-transparent hover:text-primary border border-primary transition">ADD TO CART</button>
+                        <button class="text-gray-400 hover:text-red-500" aria-label="Remove"><i class="fa-solid fa-trash"></i></button>
+                    </div>
                 </div>
 
-                <!-- Birthday -->
-                <div>
-                    <label class="text-gray-600 mb-2 block">Birthday</label>
-                    <input type="date"
-                        class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-primary" value="2009-09-09">
+                <!-- Wishlist Item -->
+                <div class="flex items-center justify-between bg-white shadow rounded p-4">
+                    <div class="flex items-center gap-4">
+                        <img src="public/images/products/product12.jpg" alt="mini table" class="w-24 h-20 object-cover rounded">
+                        <div>
+                            <h5 class="text-lg font-semibold uppercase">mini table</h5>
+                            <p class="text-sm text-gray-500">Availability: <span class="text-green-500">In Stock</span></p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <p class="text-lg text-red-500 font-semibold">Rp 150.000</p>
+                        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-transparent hover:text-primary border border-primary transition">ADD TO CART</button>
+                        <button class="text-gray-400 hover:text-red-500" aria-label="Remove"><i class="fa-solid fa-trash"></i></button>
+                    </div>
                 </div>
 
-                <!-- Gender -->
-                <div>
-                    <label class="text-gray-600 mb-2 block">Gender</label>
-                    <select
-                        class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-primary">
-                        <option selected>Male</option>
-                        <option>Female</option>
-                    </select>
+                <!-- Wishlist Item -->
+                <div class="flex items-center justify-between bg-white shadow rounded p-4">
+                    <div class="flex items-center gap-4">
+                        <img src="public/images/products/product2.jpg" alt="Couple Sofa" class="w-24 h-20 object-cover rounded">
+                        <div>
+                            <h5 class="text-lg font-semibold uppercase">Couple Sofa</h5>
+                            <p class="text-sm text-gray-500">Availability: <span class="text-green-500">In Stock</span></p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <p class="text-lg text-red-500 font-semibold">Rp 650.000</p>
+                        <button class="bg-primary text-white px-4 py-2 rounded hover:bg-transparent hover:text-primary border border-primary transition">ADD TO CART</button>
+                        <button class="text-gray-400 hover:text-red-500" aria-label="Remove"><i class="fa-solid fa-trash"></i></button>
+                    </div>
                 </div>
-
-                <!-- Email -->
-                <div>
-                    <label class="text-gray-600 mb-2 block" >Email Address</label>
-                    <input type="email"
-                        class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-primary"
-                        placeholder="Enter email address" value="muhammadrizkisuryapratama@gmail.com">
-                </div>
-
-                <!-- Phone -->
-                <div>
-                    <label class="text-gray-600 mb-2 block">Phone Number</label>
-                    <input type="text"
-                        class="w-full border border-gray-300 px-4 py-2 rounded focus:outline-none focus:border-primary"
-                        placeholder="Enter phone number" value="+62 812-3456-7890">
-                </div>
-            </div>
-
-            <!-- Button -->
-            <div class="mt-6">
-                <button
-                    class="bg-primary text-white px-6 py-2 rounded hover:bg-transparent hover:text-primary border border-primary transition uppercase">
-                    Save Changes
-                </button>
             </div>
         </div>
-        <!-- Profile End -->
+        <!-- Wishlist End -->
 
      </div>
     <!-- Account Wrapper -->
