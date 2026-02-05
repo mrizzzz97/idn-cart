@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IDN CART | Login</title>
+    <title>IDN CART | Register</title>
     <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="src/style.css">
@@ -126,13 +126,17 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- login form -->
+    <!-- register form -->
     <div class="container py-16">
         <div class="max-w-lg mx-auto shadow px-6 py-7 rounded overflow-hidden">
-            <h2 class="text-2xl uppercase font-medium mb-1">login</h2>
-            <p class="text-gray-600 text-sm mb-6">Login if you are returning customer</p>
+            <h2 class="text-2xl uppercase font-medium mb-1">create an account</h2>
+            <p class="text-gray-600 text-sm mb-6">Register here if you don't have an account</p>
             <form action="">
                 <div class="space-y-4">
+                    <div>
+                        <label class="text-gray-600 mb-2 block">Fullname <span class="text-primary">*</span></label>
+                        <input type="text" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="fullname">
+                    </div>
                     <div>
                         <label class="text-gray-600 mb-2 block">Email address <span class="text-primary">*</span></label>
                         <input type="email" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="example@mail.com">
@@ -141,15 +145,16 @@
                         <label class="text-gray-600 mb-2 block">Password <span class="text-primary">*</span></label>
                         <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="password">
                     </div>
-                    <div class="flex items-center justify-between mt-6">
-                        <div class="flex items-center">
-                            <input type="checkbox" id="agreement" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
-                            <label for="agreement" class="text-gray-600 ml-3 cursor-pointer">Remember me</label>
-                        </div>
-                        <a href="" class="text-primary">Forgot password</a>
+                    <div>
+                        <label class="text-gray-600 mb-2 block">Confirm Password <span class="text-primary">*</span></label>
+                        <input type="password" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400" placeholder="confirm password">
+                    </div>
+                    <div class="flex items-center">
+                        <input type="checkbox" id="terms" class="w-5 h-5 text-primary focus:ring-0 rounded-sm cursor-pointer mr-4">ing
+                        <label for="terms" class="text-gray-600 cursor-pointer"> I have read and agree to the <a href="#" class="text-primary">terms &amp; conditions</a></label>
                     </div>
                     <div class="mt-4">
-                        <button type="submit" class="bg-primary block w-full text-center text-white py-2 border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">Login</button>
+                        <button type="submit" class="bg-primary block w-full text-center text-white py-2 border border-primary rounded hover:bg-transparent hover:text-primary transition uppercase font-roboto font-medium">Register</button>
                     </div>
                 </div>
             </form>
@@ -164,12 +169,12 @@
                 <a href="" class="bg-gray-900 w-1/2 py-2 text-center text-white rounded uppercase font-roboto font-medium text-sm hover:bg-gray-700"><i class="mr-2 fa-brands fa-github"></i> Github</a>
             </div>
             <!-- login with end -->
-             <p class="mt-4 text-gray-600 text-center">
-                Don't have an account? <a href="register.html" class="text-primary">Register now</a>
-             </p>
+            <p class="mt-4 text-gray-600 text-center">
+                Already have an account? <a href="login.html" class="text-primary">Login now</a>
+            </p>
         </div>
     </div>
-    <!-- login form end -->
+    <!-- register form end -->
 
     <!-- footer -->
     <footer class="bg-white pt-16 pb-12 border-t border-gray-100">
